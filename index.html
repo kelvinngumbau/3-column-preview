@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+
+    <title>3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        font-size: 15px;
+      }
+      .container {
+        margin: 160px 45px 45px 45px;
+        display: flex;
+        /* border: 2px solid red; */
+        width: auto;
+        justify-content: center;
+        position: relative;
+      }
+      img,
+      h1,
+      .btn {
+        margin-right: auto;
+      }
+      .col-sm-4 {
+        padding: 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+      }
+      .col1 {
+        background-color: hsl(31, 77%, 52%);
+        color: #fff;
+        float: left;
+      }
+      .col2 {
+        background-color: hsl(184, 100%, 22%);
+        color: #ffff;
+      }
+      .col3 {
+        background-color: hsl(179, 100%, 13%);
+        color: #fff;
+      }
+      .btn {
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        height: 40px;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        border: none;
+        margin-top: 45px;
+        margin-bottom: 30px;
+      }
+      .btn-primary {
+        color: hsl(31, 77%, 52%);
+      }
+      .btn-secondary {
+        color: hsl(184, 100%, 22%);
+        margin-top: 55px;
+      }
+      .btn-dark {
+        color: hsl(179, 100%, 13%);
+      }
+      .btn:hover {
+        cursor: pointer;
+        color: #fff;
+        border: 2px solid #fff;
+        /* position: fixed; */
+      }
+      .btn-primary:hover {
+        background-color: hsl(31, 77%, 52%);
+      }
+      .btn-secondary:hover {
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .btn-dark:hover {
+        background-color: hsl(179, 100%, 13%);
+      }
+
+      @media (max-width: 375px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          background-color: red;
+          margin: 0%;
+          padding: 0%;
+        }
+        .col-sm-4 {
+          display: flexbox;
+          width: 100%;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-4 col1">
+        <img src="images/icon-sedans.svg" alt="" />
+        <h1>Sedans</h1>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div class="col-sm-4 col2">
+        <img src="images/icon-suvs.svg" alt="" />
+        <h1>SUVs</h1>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="btn btn-secondary">Learn More</button>
+      </div>
+      <div class="col-sm-4 col3">
+        <img src="images/icon-luxury.svg" alt="" />
+        <h1>Luxury</h1>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="btn btn-dark">Learn More</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kelvin MWako</a>.
+    </div>
+  </body>
+</html>
